@@ -1,5 +1,4 @@
 export default {
-  namespaced: true,
   state: {
     text: "请选择",
     isShow: false,
