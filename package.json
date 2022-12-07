@@ -1,0 +1,37 @@
+{
+  "name": "vuex-ts-extension",
+  "version": "0.0.1",
+  "description": "基于有些浏览器不支持vuex的操作提示，此插件可智能提示各状态和方法，且支持区分namespaced配置",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherrybiu/vuex-ts-extension.git"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "vuex",
+    "map"
+  ],
+  "author": "danhang<wangli614362306@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cherrybiu/vuex-ts-extension/issues"
+  },
+  "homepage": "https://github.com/cherrybiu/vuex-ts-extension#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.5",
+    "cache-loader": "^4.1.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "~4.1.5",
+    "vue": "^2.6.12",
+    "vuex": "3.6.2",
+    "webpack": "^5.75.0"
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
+  }
+}
