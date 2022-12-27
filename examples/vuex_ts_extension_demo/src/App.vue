@@ -8,7 +8,7 @@
 <script lang="ts">
 import Vue from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
-import { mapState } from "./store";
+import { mapState, mapMutations, mapActions } from "./store";
 
 export default Vue.extend({
   name: "App",
@@ -16,11 +16,17 @@ export default Vue.extend({
     HelloWorld,
   },
   computed: {
-    // ...mapState(['text'])
-    // ...mapState()
+    ...mapState("test", ["isShow", "text"]),
+    ...mapState(["isModule"]),
   },
   created() {
-    // console.log("text--", this.text);
+    console.log("text--", this.text);
+
+    this.changeText("xixixi");
+    console.log("textAfter---", this.text);
+  },
+  methods: {
+    ...mapMutations("test", ["changeText"]),
   },
 });
 </script>

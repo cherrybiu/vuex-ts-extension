@@ -22,7 +22,7 @@ import {
     GetNameSpaceObject,
     PromiseAction
   } from './type';
-  
+
   export class StoreExtension<S, T extends StoreOptions<S>> {
     store: _Store<S>;
   

@@ -1,21 +1,18 @@
 export default {
   state: {
-    text: "请选择",
-    isShow: false,
-    user: {
-      name: "lily",
-      age: 18,
-    },
+    moduleName: "模块",
+    moduleKey: "module",
+    isModule: false,
   },
   mutations: {
-    changeText(state, text: string) {
-      state.text = text;
+    changeModule(state, text: string) {
+      state.moduleName = text;
     },
   },
   actions: {
-    changeTextAsync({ commit }, payload: string) {
+    async changeModuleAsync({ commit }, payload: string) {
       setTimeout(() => {
-        commit("changeText", payload);
+        commit("changeModule", payload);
       }, 0);
     },
   },

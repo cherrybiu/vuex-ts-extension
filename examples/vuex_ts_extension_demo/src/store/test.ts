@@ -14,7 +14,7 @@ export default {
     },
   },
   actions: {
-    changeTextAsync({ commit }, payload: string) {
+    async changeTextAsync({ commit }, payload: string) {
       setTimeout(() => {
         commit("changeText", payload);
       }, 0);

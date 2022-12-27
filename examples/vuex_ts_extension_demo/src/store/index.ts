@@ -1,6 +1,7 @@
-import Vue from "vue";
 import Vuex from "vuex";
+import Vue from "vue";
 import test from "./test";
+import noNamed from "./noNamed";
 import { StoreExtension } from "../../../../src";
 
 Vue.use(Vuex);
@@ -11,12 +12,12 @@ const storeOptions = {
   actions: {} as any,
   modules: {
     test,
+    noNamed,
   },
 };
 
 const commonStore = new Vuex.Store(storeOptions);
-const s = new StoreExtension(storeOptions);
-
-export const { mapState, mapGetters, mapActions, mapMutations } = s;
-
 export default commonStore;
+
+const s = new StoreExtension(storeOptions);
+export const { mapState, mapGetters, mapActions, mapMutations } = s;
