@@ -24,9 +24,13 @@ export default Vue.extend({
 
     this.changeText("xixixi");
     console.log("textAfter---", this.text);
+    console.log("isModule");
+
+    this.changeModuleAsync("123");
   },
   methods: {
     ...mapMutations("test", ["changeText"]),
+    ...mapActions(["changeModuleAsync"]),
   },
 });
 </script>
