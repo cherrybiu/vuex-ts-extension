@@ -1,6 +1,6 @@
 {
   "name": "vuex-ts-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "基于有些浏览器不支持vuex的操作提示，此插件可智能提示各状态和方法，且支持区分namespaced配置",
   "main": "src/index.ts",
   "scripts": {
