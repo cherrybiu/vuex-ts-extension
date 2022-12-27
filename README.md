@@ -3,26 +3,26 @@
 
 ### map函数导入
 通常在store.js的store初始化文件中，导入该插件
-![img_5.png](img_5.png)
+![img_5.png](src/assets/img_5.png)
 然后导出如下几个方法
-![img_9.png](img_9.png)
+![img_9.png](src/assets/img_9.png)
 
 ### map辅助函数使用步骤
 1. 从store文件导入所需要的辅助函数
-![img.png](img.png)
+![img.png](src/assets/img.png)
 2. 直接使用,支持多种vuex支持的方式
 - 支持namespaced
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
-![img_3.png](img_3.png)
+![img_1.png](src/assets/img_1.png)
+![img_2.png](src/assets/img_2.png)
+![img_3.png](src/assets/img_3.png)
 
 - 不支持namespaced
-- ![img_4.png](img_4.png)
+- ![img_4.png](src/assets/img_4.png)
 
 **其他用法皆为map辅助函数的用法，不同是使用时有提示**
 
 ### 检验所定义变量类型
-![img_7.png](img_7.png)
+![img_7.png](src/assets/img_7.png)
 
 ###示例
 ```javascript
